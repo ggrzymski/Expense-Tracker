@@ -24,8 +24,7 @@ store.dispatch(setTextFilter('bill'));
 
 const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-//console.log(visibleExpenses);
-console.log(store.getState());
+console.log(visibleExpenses);
 
 //Provider makes store available to the connect() calls in the component hierachy.
 const jsx = (
