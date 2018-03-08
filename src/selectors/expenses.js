@@ -1,3 +1,11 @@
+/**
+ * Passes in expenses and filters and returns back modified
+ * array based on the filters applied. Also, the resulting array
+ * is sorted either by amount or date.
+ * 
+ * @param {*} expenses 
+ * @param {*} filters 
+ */
 const getVisibleExpenses = (expenses,{text,sortBy,startDate,endDate}) => {
     return expenses.filter((expense) =>{
         const startDateMatch = typeof startDate !== 'number' || expense.createdAt >= startDate;

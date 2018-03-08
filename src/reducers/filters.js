@@ -5,6 +5,12 @@ const filtersReducerDefaultState = {
     endDate: undefined
 };
 
+/**
+ * Modifies the filter's settings based on the incoming input. Changes
+ * the sort setting, text filter, and start/end dates. Previous state and action as inputs.
+ * @param {*} state 
+ * @param {*} action 
+ */
 const filtersReducer = (state = filtersReducerDefaultState, action) => {
     switch(action.type) {
         case "TEXT_FILTER":
