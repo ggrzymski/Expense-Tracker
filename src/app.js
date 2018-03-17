@@ -8,6 +8,7 @@ import './styles/styles.scss';
 import {addExpense} from './actions/expenses';
 import getVisibleExpenses from './selectors/expenses';
 import {setTextFilter} from './actions/filters';
+import 'react-dates/lib/css/_datepicker.css';
 
 /*
  * Store holds whole state tree of application.
